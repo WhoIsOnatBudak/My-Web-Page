@@ -92,27 +92,31 @@ ul{
 #Abim{
     margin-bottom: 45px;
     padding: 25px;
-    border: 2px solid #333;
+    border: 6px double #333;
     width: 300px;
+    background-color: #a9a9a9;
 }
 #pro{
     margin: 45px;
     padding: 25px;
-    border: 2px solid #333;
+    border: 6px double #333;
     width: 300px;
+    background-color: #a9a9a9;
 }
 .projects{
     width: 300px;
     height: 150px;
     background-color: rgb(65, 50, 50);
     margin: 50px;
+    border: 12px double #a9a9a9;
     display: inline-block;
     
 }
 #contact{
     margin: 45px;
     padding: 25px;
-    border: 2px solid #333;
+    border: 6px double #333;
+    background-color: #a9a9a9;
     width: 300px;
 }
 .cnt{
