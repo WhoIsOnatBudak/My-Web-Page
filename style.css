@@ -2,7 +2,7 @@
     background-color: #a9a9a9;
     padding: 10px 20px;
     color: #333;
-
+    z-index: 1000;
     position: fixed;
     width: 100%;
 }
@@ -34,11 +34,11 @@ html{
     background-color: #a9a9a92a;;
     transition: 300ms;
     text-align: center;
+    z-index: 1001;
 }
 #top-s{
     height:  56px;
     z-index: 998;
-
 }
 #menu:hover{
     background-color: #cac9c9;
@@ -119,7 +119,7 @@ ul{
     
 }
 .projects:hover{
-
+    scale: 1.2;
     background-color: rgb(104, 69, 69);
 }
 #contact{
@@ -167,6 +167,7 @@ ul{
     transition: 600ms;
     border-radius: 0px 7px 7px 0px;
     padding: 10px 10px 20px 10px;
+    z-index: 500;
 }
 #prev:hover{
     background-color: #333;
@@ -182,6 +183,8 @@ ul{
     border-radius: 7px 0px 0px 7px;
     transition: 600ms;
     padding: 10px 10px 20px 10px;
+    
+    z-index: 501;
 }
 #next:hover{
     background-color: #333;

@@ -10,7 +10,7 @@ function showSlide(n){
     let slides = document.getElementsByClassName("slides");
     let dots = document.getElementsByClassName("dot");
     if (n > slides.length) { n = 1; }
-    if (n < 1) { cur = slides.length; }
+    if (n < 1) { n = slides.length; }
     
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
