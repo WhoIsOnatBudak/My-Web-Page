@@ -37,6 +37,8 @@ html{
 }
 #top-s{
     height:  56px;
+    z-index: 998;
+
 }
 #menu:hover{
     background-color: #cac9c9;
@@ -113,14 +115,16 @@ ul{
     margin: 50px;
     border: 12px double #a9a9a9;
     display: inline-block;
+    transition: 600ms;
     
 }
+.projects:hover{
+
+    background-color: rgb(104, 69, 69);
+}
 #contact{
-    margin: 45px;
-    padding: 25px;
-    border: 6px double #333;
-    background-color: #a9a9a9;
-    width: 300px;
+    padding: 10px;
+    color: #666;
 }
 .cnt{
     color:#666;
@@ -204,4 +208,18 @@ ul{
 #who-am-i{
     font-size: x-large;
     padding: 100px;
+}
+
+#gif-c{
+    padding-left: 100px;
+    display: inline-block;
+}
+#img-g{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+}
+#cont-info{
+    margin-top: 150px;
+    background-color: #dddddd;
 }
