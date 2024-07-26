@@ -43,14 +43,13 @@ html{
     scale: 1.2;
 }
 #slide{
+    z-index: 999;
     background-color: #333;
     height: 100%;
     width: 300px;
     position: fixed;
     right: -300px;
-
     transition: 300ms;
-
 }
 ul{
     list-style-type: none;
@@ -137,4 +136,72 @@ ul{
     font-size: 50px;
     color:#a9a9a9;
     margin-top: 15px;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 110px 12px;
+    position: absolute;
+    top: 0;
+}
+.slides{
+    display: block;
+    animation: fade;
+    animation-duration: 100ms;
+}
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+#prev {
+    color:white;
+    background-color: #666;
+    font-size: 50px;
+    position: absolute;
+    left: 0px;
+    top: 250px;
+    transition: 600ms;
+    border-radius: 0px 7px 7px 0px;
+    padding: 10px 10px 20px 10px;
+}
+#prev:hover{
+    background-color: #333;
+}
+
+#next {
+    color:white;
+    background-color: #666;
+    font-size: 50px;
+    position: absolute;
+    right: 0px;
+    top: 250px;
+    border-radius: 7px 0px 0px 7px;
+    transition: 600ms;
+    padding: 10px 10px 20px 10px;
+}
+#next:hover{
+    background-color: #333;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 20px 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.dot:hover{
+    background-color:#666;
+}
+.img-s{
+    
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+#who-am-i{
+    font-size: x-large;
+    padding: 100px;
 }
