@@ -5,6 +5,8 @@
     z-index: 1000;
     position: fixed;
     width: 100%;
+    box-shadow: 10px,5px,3px,#6e6e6e;
+    text-shadow: 1.5px 1.5px 5px rgb(119, 119, 119);
 }
 body {
     padding: 0;
@@ -38,14 +40,16 @@ html{
 }
 #top-s{
     height:  56px;
-    z-index: 998;
+    z-index: 999;
+    box-shadow: 10px,5px,3px,#6e6e6e;
+    
 }
 #menu:hover{
     background-color: #cac9c9;
     scale: 1.2;
 }
 #slide{
-    z-index: 999;
+    z-index: 998;
     background-color: #333;
     height: 100%;
     width: 300px;
@@ -81,6 +85,7 @@ ul{
 #p-next-p{
     display: inline-block;
     padding-left: 150px;
+    
 }
 .hed{
     text-decoration: underline;
@@ -159,7 +164,7 @@ ul{
 }
 #prev {
     color:white;
-    background-color: #666;
+    background-color: #6666665b;
     font-size: 50px;
     position: absolute;
     left: 0px;
@@ -175,7 +180,7 @@ ul{
 
 #next {
     color:white;
-    background-color: #666;
+    background-color: #6666665b;
     font-size: 50px;
     position: absolute;
     right: 0px;
@@ -225,4 +230,7 @@ ul{
 #cont-info{
     margin-top: 150px;
     background-color: #dddddd;
+}
+.shadow{
+    box-shadow: 0px 3px 5px rgb(119, 119, 119);
 }
