@@ -16,9 +16,9 @@ function showSlide(n){
         slides[i].style.display = "none";
     }
     for (let i = 0; i < dots.length; i++) {
-        dots[i].style.backgroundColor = "#999";
+        dots[i].style.backgroundColor = "#f5f5f5";
     }
-    dots[n-1].style.backgroundColor = "black";
+    dots[n-1].style.backgroundColor = "#a9a9a9";
     slides[n-1].style.display = "block";
     cur = n;
 }

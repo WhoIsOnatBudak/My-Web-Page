@@ -1,12 +1,12 @@
 #main-h {
-    background-color: #a9a9a9;
+    background-color: rgba(245, 245, 245, 0.214);
     padding: 10px 20px;
-    color: #333;
+    color: #a9a9a9;
     z-index: 1000;
     position: fixed;
     width: 100%;
     box-shadow: 10px,5px,3px,#6e6e6e;
-    text-shadow: 1.5px 1.5px 5px rgb(119, 119, 119);
+    backdrop-filter: blur(5px);
 }
 body {
     padding: 0;
@@ -32,9 +32,10 @@ html{
     top: 10px;
     height: 12.8px;
     font-size: large;
-    border: 2px solid #333;
-    background-color: #a9a9a92a;;
-    transition: 300ms;
+    color: #a9a9a9b2;
+    border: 2px solid #a9a9a9;
+    background-color: rgba(245, 245, 245, 0.77);
+    transition: 600ms;
     text-align: center;
     z-index: 1001;
 }
@@ -45,12 +46,13 @@ html{
     
 }
 #menu:hover{
-    background-color: #cac9c9;
+    background-color: rgb(104, 69, 69);
     scale: 1.2;
 }
 #slide{
     z-index: 998;
-    background-color: #333;
+    background-color: rgb(230, 230, 230);
+    backdrop-filter: blur(5px);
     height: 100%;
     width: 300px;
     position: fixed;
@@ -64,20 +66,23 @@ ul{
     color:#a9a9a9;
     padding: 10px;
     margin : 3px;
+    transition: 600ms;
 }
 .s:hover{
-    background-color: grey;
+    background-color: rgb(104, 69, 69);
 }
 #checkbox1{
     display: none;
 }
 #checkbox1:checked +#slide {
     right: 0px;
+    box-shadow: 20px 20px 20px grey;
 }
 #Me{
     border-radius: 50%;
     width: 300px;
     height: 300px;
+    margin-left: 100px;
     padding-left: 100px;
     padding-top: 100px;
     display: inline-block;
@@ -85,10 +90,12 @@ ul{
 #p-next-p{
     display: inline-block;
     padding-left: 150px;
+    margin-left: 150px;
     
 }
 .hed{
     text-decoration: underline;
+    color: #979797;
     margin: 5px;
 }
 .about{
@@ -102,23 +109,40 @@ ul{
 #Abim{
     margin-bottom: 45px;
     padding: 25px;
-    border: 6px double #333;
+    border: 2px solid #a9a9a9;
+    color:#a9a9a9;
+    border-radius: 5px;
     width: 300px;
-    background-color: #a9a9a9;
+    background-color: whitesmoke;
+    text-align: center;
+    transition: 600ms;
+}
+#Abim:hover{
+    border-color: rgb(104, 69, 69);
+    color: rgb(104, 69, 69);
 }
 #pro{
-    margin: 45px;
-    padding: 25px;
-    border: 6px double #333;
+
+    margin-top: 45px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 45px;
+    padding: 22px;
+    text-align: center;
+    border: 3px solid #a9a9a9;
+    border-radius: 5px;
     width: 300px;
-    background-color: #a9a9a9;
+    background-color: whitesmoke;
+    color: #a9a9a9;
+    transition: 300ms;
 }
 .projects{
     width: 300px;
     height: 150px;
-    background-color: rgb(65, 50, 50);
-    margin: 50px;
-    border: 12px double #a9a9a9;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin: 50px 100px;
+    border: 1px solid #a9a9a9;
     display: inline-block;
     transition: 600ms;
     
@@ -129,10 +153,14 @@ ul{
 }
 #contact{
     padding: 10px;
-    color: #666;
+    color: #a9a9a9;
 }
 .cnt{
-    color:#666;
+    color: #a9a9a9;
+    transition: 600ms;
+}
+.cnt:hover{
+    color: rgb(104, 69, 69);
 }
 .kay{
     color:#a9a9a9;
@@ -154,9 +182,10 @@ ul{
     top: 0;
 }
 .slides{
+    margin-left: 15%;
     display: block;
     animation: fade;
-    animation-duration: 100ms;
+    animation-duration: 500ms;
 }
 @keyframes fade {
     from {opacity: .4} 
@@ -167,7 +196,7 @@ ul{
     background-color: #6666665b;
     font-size: 50px;
     position: absolute;
-    left: 0px;
+    left: 15%;
     top: 250px;
     transition: 600ms;
     border-radius: 0px 7px 7px 0px;
@@ -175,15 +204,15 @@ ul{
     z-index: 500;
 }
 #prev:hover{
-    background-color: #333;
+    background-color: rgb(104, 69, 69);
 }
 
 #next {
     color:white;
-    background-color: #6666665b;
+    background-color: #6666665d;
     font-size: 50px;
     position: absolute;
-    right: 0px;
+    right: 15%;
     top: 250px;
     border-radius: 7px 0px 0px 7px;
     transition: 600ms;
@@ -192,14 +221,15 @@ ul{
     z-index: 501;
 }
 #next:hover{
-    background-color: #333;
+    background-color: rgb(104, 69, 69);
 }
 .dot{
     cursor: pointer;
     height: 15px;
     width: 15px;
     margin: 20px 5px;
-    background-color: #bbb;
+    border: 2px solid #9d9d9d;
+    background-color: #f5f5f5;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -209,13 +239,14 @@ ul{
 }
 .img-s{
     
-    width: 100%;
+    width: 82.288%;
     height: 500px;
     object-fit: cover;
 }
 #who-am-i{
     font-size: x-large;
     padding: 100px;
+    color:#9d9d9d;
 }
 
 #gif-c{
@@ -229,8 +260,16 @@ ul{
 }
 #cont-info{
     margin-top: 150px;
-    background-color: #dddddd;
+    background-color: whitesmoke;
+    box-shadow:-3px -1px 5px rgb(119, 119, 119);
 }
 .shadow{
     box-shadow: 0px 3px 5px rgb(119, 119, 119);
+}
+#pro-a{
+    text-decoration: none;
+}
+#pro:hover{
+    border-color: rgb(104, 69, 69);
+    color: rgb(104, 69, 69);
 }
