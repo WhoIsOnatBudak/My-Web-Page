@@ -129,7 +129,10 @@ ul{
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 45px;
-    padding: 22px;
+    padding-left: 50px;
+    padding-top: 22px;
+    padding-right: 22px;
+    padding-bottom: 22px;
     text-align: center;
     border: 3px solid #a9a9a9;
     border-radius: 5px;
@@ -139,11 +142,12 @@ ul{
     transition: 300ms;
 }
 .projects{
-    width: 300px;
+    width: 20%;
     height: 150px;
     background-color: whitesmoke;
     border-radius: 5px;
-    margin: 50px 100px;
+    /*margin: 50px 100px;*/
+    margin: 50px 6.2% ;
     border: 1px solid #a9a9a9;
     display: inline-block;
     transition: 600ms;
