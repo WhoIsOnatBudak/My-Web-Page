@@ -142,14 +142,17 @@ ul{
     transition: 300ms;
 }
 .projects{
-    width: 20%;
+    flex-basis: 20%; /* Sets the base width for the boxes */
+    max-width: 300px; /* Limits the maximum size of the boxes */
+    min-width: 150px; /* Ensures the boxes do not shrink too much */
     height: 150px;
     background-color: whitesmoke;
     border-radius: 5px;
-    /*margin: 50px 100px;*/
-    margin: 50px 6.2% ;
+    margin: 50px; /* Adds space around each box */
     border: 1px solid #a9a9a9;
-    display: inline-block;
+    display: flex; /* Flex allows for better control over the content inside each project */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
     transition: 600ms;
     
 }
@@ -290,5 +293,31 @@ ul{
     font-size: large;
 }
 #fels{
+    display: flex;
+    justify-content: space-between; /* Distributes the boxes evenly with space in between */
+    align-items: center; /* Centers the boxes vertically within the container */
+    flex-wrap: wrap; /* Allows the boxes to wrap to the next line if necessary */
     height: 400px;
+    padding: 20px;
+}
+.blocks{
+    display: inline-block;
+}
+#fels a {
+    text-decoration: none; /* Remove the underline from links */
+    color: inherit; /* Inherit the text color from the parent */
+    display: block; /* Make the anchor tag behave like a block element */
+}
+#gitPRJ a{
+    text-decoration: none; /* Remove the underline from links */
+    color: inherit; /* Inherit the text color from the parent */
+    display: block; /* Make the anchor tag behave like a block element */
+}
+#gitPRJ{
+    display: flex;
+    justify-content: space-between; /* Distributes the boxes evenly with space in between */
+    align-items: center; /* Centers the boxes vertically within the container */
+    flex-wrap: wrap; /* Allows the boxes to wrap to the next line if necessary */
+    height: 400px;
+    padding: 20px;
 }
