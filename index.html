@@ -1,66 +1,86 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" content="width=device-width, inital scale =1.0">
-        <title>OnatBudak</title>
-        <link rel="stylesheet" href="style.css">
-        
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" type="image/x-icon" href="./t_up.png">
-        <script src="s.js"></script>
-    </head>
+<html lang="en">
 
-    <body onload="showSlide(1)">
-        
-            <div id="top-s">
-                <h1 id="main-h" class="shadow">Welcome to Onat's page</h1>
-            </div>
-            <label id="menu" for="checkbox1" class="shadow"><i class="fa-solid fa-bars"></i></label>
-            <input type="checkbox" id="checkbox1">
-            <div id="slide">
-                <ul>
-                    <li class="s">
-                        <a href="./index.html" class="kay">Main</a>
-                    </li>
-                    <li class="s">
-                        <a href="./about.html" class="kay">About Me</a>
-                    </li>
-                    <li class="s">
-                            <a href="./proje.html" class="kay">My projects</a>
-                    </li>
-                    <li class="s">
-                        <a href="./felsefe.html" class="kay">Philosophy(In Turkish)</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="context">
-                <div id="slid">
-                    <div class="slides"><div class="numbertext">1/3</div><img align="center" src="./harvard.png" class="img-s shadow"></div>
-                    <div class="slides"><div class="numbertext">2/3</div><img align="center" src="./MIT.png" class="img-s shadow"></div>
-                    <div class="slides"><div class="numbertext">3/3</div><img align="center" src="./forza.webp" class="img-s shadow"></div>
-                    <a id="prev" onclick="changeSlide(-1)">❮</a>
-                    <a id="next" onclick="changeSlide(+1)">❯</a>
-                </div>
-                <div style="text-align: center;">
-                    <div class="dot" onclick="showSlide(1)"></div>
-                    <div class="dot" onclick="showSlide(2)"></div>
-                    <div class="dot" onclick="showSlide(3)"></div>
-                </div>
-                <p id="who-am-i">
-                    I am a 3 grade computer engineering student in Istanbul Technical University. This page is for me to learn how to write a website.
-                    It made me learn so much so far, I will keep developing this site (I hope ;D). If you would like to see my codes you can see them from
-                    projects section.
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onat Budak</title>
+    <meta name="description"
+        content="Onat Budak — Computer Engineering student at ITU. Portfolio, career timeline, and projects.">
+    <link rel="icon" type="image/x-icon" href="./t_up.png">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Devicon (tech stack icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- config.js first so SLIDES/TIMELINE/PROJECTS are defined -->
+    <script src="config.js" defer></script>
+    <script src="s.js" defer></script>
+</head>
 
+<body>
+
+    <!-- ── NAVBAR ─────────────────────────────────────────── -->
+    <div id="top-s">
+        <header id="main-h">
+            <div class="brand"><span>Onat</span> Budak</div>
+            <a id="btn-philosophy" href="./felsefe.html">
+                <i class="fa-solid fa-scroll"></i> Felsefe
+            </a>
+        </header>
+    </div>
+
+    <!-- ── SLIDESHOW ──────────────────────────────────────── -->
+    <section id="slideshow-section" style="padding-top:24px;">
+        <div id="slideshow">
+            <div id="slide-track"><!-- built by s.js --></div>
+            <button class="slide-btn" id="slide-prev" onclick="prevSlide()">&#10094;</button>
+            <button class="slide-btn" id="slide-next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <div class="dots-wrap" id="slide-dots"><!-- built by s.js --></div>
+    </section>
+
+    <!-- ── ABOUT ──────────────────────────────────────────── -->
+    <section id="about">
+        <div class="about-inner">
+            <div class="about-text">
+                <h2 class="section-title" style="text-align:left; margin-bottom:16px;">Hi, I'm Onat</h2>
+                <p>
+                    I'm a 3rd-year Computer Engineering student at Istanbul Technical University.
+                    This site started as a way to learn web development — and it's taught me a lot.
+                    I'll keep building it as I grow. Feel free to explore my projects and journey below!
                 </p>
-                <div id="cont-info">
-                    <h2 id="contact">Contact to me</h2>
-                    <a class="cnt" href="https://www.instagram.com/onat.budak/"><i class="fa-brands fa-instagram" style="font-size:36px;margin-left: 50px;margin-top: 40px;margin-right: 20px;margin-bottom: 70px;"></i>Instagram,</a>
-                    <a class="cnt" href="https://www.linkedin.com/in/onat-budak-010a26223/"><i class="fa-brands fa-linkedin" style="font-size:36px;margin-left: 50px;margin-top: 40px;margin-right: 20px;margin-bottom: 70px;"></i>Linkedin,</a>
-                    <a class="cnt" href="https://github.com/WhoIsOnatBudak"><i class="fa-brands fa-github" style="font-size:36px;margin-left: 50px;margin-top: 40px;margin-right: 20px;margin-bottom: 70px;"></i>Github,</a>
-                </div>
-                
             </div>
+        </div>
+    </section>
 
+    <!-- ── TIMELINE ───────────────────────────────────────── -->
+    <section id="timeline">
+        <h2 class="section-title">Career Journey</h2>
+        <div id="timeline-gantt"><!-- built by s.js --></div>
+    </section>
 
-    </body>
+    <!-- ── PROJECTS ───────────────────────────────────────── -->
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+        <div id="projects-grid"><!-- built by s.js --></div>
+    </section>
+
+    <!-- ── CONTACT ────────────────────────────────────────── -->
+    <footer id="contact-section">
+        <h2>Get in touch</h2>
+        <a class="cnt" href="https://www.instagram.com/onat.budak/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i> Instagram
+        </a>
+        <a class="cnt" href="https://www.linkedin.com/in/onat-budak-010a26223/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a class="cnt" href="https://github.com/WhoIsOnatBudak" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i> GitHub
+        </a>
+    </footer>
+
+</body>
+
 </html>

@@ -1,77 +1,65 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" content="width=device-width, inital scale =1.0">
-        <title>OnatBudak</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" type="image/x-icon" href="./t_up.png">
-    </head>
+<html lang="tr">
 
-    <body>
-        
-            <div id="top-s">
-                <h1 id="main-h" class="shadow">Welcome to Onat's page</h1>
-            </div>
-            <label id="menu" for="checkbox1" class="shadow"><i class="fa-solid fa-bars"></i></label>
-            <input type="checkbox" id="checkbox1">
-            <div id="slide">
-                <ul>
-                    <li class="s">
-                        <a href="./index.html" class="kay">Main</a>
-                    </li>
-                    <li class="s">
-                        <a href="./about.html" class="kay">About Me</a>
-                    </li>
-                    <li class="s">
-                            <a href="./proje.html" class="kay">My projects</a>
-                    </li>
-                    <li class="s">
-                        <a href="./felsefe.html" class="kay">Philosophy(In Turkish)</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="context">
-                <div id="fels">
-                    <a href="./felsefe/falRel.html">
-                        <div class="projects shadow">
-                            <p class="pro-text">Din yalanlama</p>
-                        </div>
-                    </a>
-                    
-                    <a href="./felsefe/god.html">
-                        <div class="projects shadow">
-                            <p class="pro-text">Kaç tane tanrı olabilir</p>
-                        </div>
-                    </a>
-                
-                    <a href="./felsefe/tri.html">
-                        <div class="projects shadow">
-                            <p class="pro-text">Trinity yanlış mı</p>
-                        </div>
-                    </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felsefe — Onat Budak</title>
+    <meta name="description" content="Onat Budak'ın felsefi yazıları — din, tanrı ve toplum üzerine denemeler.">
+    <link rel="icon" type="image/x-icon" href="./t_up.png">
+    <link rel="stylesheet" href="felsefe/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        crossorigin="anonymous" />
+</head>
 
-                    <a href="./felsefe/riba.html">
-                        <div class="projects shadow">
-                            <p class="pro-text">Faiz Hakkında</p>
-                        </div>
-                    </a>
-                
-                    <a href="./felsefe/dog.html">
-                        <div class="projects shadow">
-                            <p class="pro-text">Sokak kopekleri</p>
-                        </div>
-                    </a>
-                    
-                </div>
-                <div id="cont-info">
-                    <h2 id="contact">Contact to me</h2>
-                    <a class="cnt" href="https://www.instagram.com/onat.budak/"><i class="fa-brands fa-instagram" style="font-size:36px;margin-left: 50px;margin-top: 40px;margin-right: 20px;margin-bottom: 70px;"></i>Instagram,</a>
-                    <a class="cnt" href="https://www.linkedin.com/in/onat-budak-010a26223/"><i class="fa-brands fa-linkedin" style="font-size:36px;margin-left: 50px;margin-top: 40px;margin-right: 20px;margin-bottom: 70px;"></i>Linkedin,</a>
-                    <a class="cnt" href="https://github.com/WhoIsOnatBudak"><i class="fa-brands fa-github" style="font-size:36px;margin-left: 50px;margin-top: 40px;margin-right: 20px;margin-bottom: 70px;"></i>Github,</a>
-                </div>
-            </div>
+<body>
 
+    <nav class="phil-nav">
+        <a href="../index.html" class="brand"><em>Onat</em> Budak</a>
+        <div class="phil-nav-links">
+            <a href="./index.html">← Ana Sayfa</a>
+        </div>
+    </nav>
 
-    </body>
+    <main class="phil-page">
+        <p class="phil-intro">Kendi düşüncelerimi paylaşmak için yazdığım denemeler.</p>
+        <h1 class="phil-title">Felsefi Yazılar</h1>
+        <hr class="phil-rule">
+
+        <div class="phil-grid">
+            <a href="./felsefe/falRel.html" class="phil-card">
+                <div class="phil-card-icon"><i class="fa-solid fa-moon"></i></div>
+                <div class="phil-card-title">Dinlerin Yanlışlanması Hakkında</div>
+            </a>
+            <a href="./felsefe/god.html" class="phil-card">
+                <div class="phil-card-icon"><i class="fa-solid fa-infinity"></i></div>
+                <div class="phil-card-title">Kaç Tane Tanrı Olabilir?</div>
+            </a>
+            <a href="./felsefe/tri.html" class="phil-card">
+                <div class="phil-card-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                <div class="phil-card-title">Trinity Yanlış mı?</div>
+            </a>
+            <a href="./felsefe/riba.html" class="phil-card">
+                <div class="phil-card-icon"><i class="fa-solid fa-coins"></i></div>
+                <div class="phil-card-title">Faiz Hakkında</div>
+            </a>
+            <a href="./felsefe/dog.html" class="phil-card">
+                <div class="phil-card-icon"><i class="fa-solid fa-paw"></i></div>
+                <div class="phil-card-title">Sokak Köpekleri</div>
+            </a>
+        </div>
+    </main>
+
+    <footer class="phil-footer">
+        <h2>İletişim</h2>
+        <a class="cnt" href="https://www.instagram.com/onat.budak/" target="_blank"><i
+                class="fa-brands fa-instagram"></i> Instagram</a>
+        <a class="cnt" href="https://www.linkedin.com/in/onat-budak-010a26223/" target="_blank"><i
+                class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a class="cnt" href="https://github.com/WhoIsOnatBudak" target="_blank"><i class="fa-brands fa-github"></i>
+            GitHub</a>
+    </footer>
+
+</body>
+
 </html>
