@@ -6,10 +6,11 @@
 // ── SLIDESHOW IMAGES ──────────────────────────────────────
 // images/ klasörüne dosya atın ve yolunu buraya ekleyin.
 const SLIDES = [
+    'images/gezi.jpeg',
+    'images/davinci.jpeg',
+    'images/ITU<3.jpeg',
     'images/harvard.png',
     'images/MIT.png',
-    'images/forza.webp',
-    'images/forza.webp',
 ];
 
 // ── CAREER TIMELINE ───────────────────────────────────────
