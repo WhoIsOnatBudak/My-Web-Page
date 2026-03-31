@@ -332,6 +332,7 @@ section {
     align-items: center;
     margin-bottom: 10px;
     gap: 12px;
+    flex-wrap: wrap;
 }
 
 .tl-row-label {
@@ -343,6 +344,12 @@ section {
     text-align: right;
     padding-right: 12px;
     line-height: 1.3;
+    cursor: pointer;
+    transition: filter 200ms;
+}
+
+.tl-row-label:hover {
+    filter: brightness(1.2);
 }
 
 .tl-track {
@@ -406,6 +413,7 @@ section {
     padding: 0 0 0 220px;
     margin-top: -4px;
     margin-bottom: 6px;
+    width: 100%;
 }
 
 .tl-desc.tl-desc-open {

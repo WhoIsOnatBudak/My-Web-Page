@@ -126,6 +126,7 @@ function buildTimeline() {
         const rowLabel = document.createElement('div');
         rowLabel.className = 'tl-row-label';
         rowLabel.textContent = ev.label;
+        rowLabel.style.color = color;
         row.appendChild(rowLabel);
 
         const track = document.createElement('div');
@@ -143,7 +144,7 @@ function buildTimeline() {
         desc.className = 'tl-desc';
         if (ev.desc) desc.textContent = ev.desc;
 
-        bar.addEventListener('click', () => {
+        const toggleDesc = () => {
             const wasOpen = bar.classList.contains('tl-bar-active');
             document.querySelectorAll('.tl-bar').forEach(b => b.classList.remove('tl-bar-active'));
             document.querySelectorAll('.tl-desc').forEach(d => d.classList.remove('tl-desc-open'));
@@ -151,7 +152,10 @@ function buildTimeline() {
                 bar.classList.add('tl-bar-active');
                 desc.classList.add('tl-desc-open');
             }
-        });
+        };
+
+        bar.addEventListener('click', toggleDesc);
+        rowLabel.addEventListener('click', toggleDesc);
 
         track.appendChild(bar);
         row.appendChild(track);
