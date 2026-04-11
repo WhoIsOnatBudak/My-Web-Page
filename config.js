@@ -88,5 +88,15 @@ const PROJECTS = [
         url: 'https://github.com/WhoIsOnatBudak/CompCom',
         icons: ['react', 'css', 'js'],
     },
+    {
+        title: 'Waffle Guide',
+        url: 'https://github.com/WhoIsOnatBudak/WaffleGuide',
+        icons: ['react', 'css', 'js'],
+    },
+    {
+        title: 'Nöber Algoritması/Analizi (Eating)',
+        url: 'https://github.com/WhoIsOnatBudak/Matching-Staj-N-bet-algoritmas-',
+        icons: ['python'],
+    }
 
 ];
