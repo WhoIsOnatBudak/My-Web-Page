@@ -97,6 +97,11 @@ const PROJECTS = [
         title: 'Nöber Algoritması/Analizi (Eating)',
         url: 'https://github.com/WhoIsOnatBudak/Matching-Staj-N-bet-algoritmas-',
         icons: ['python'],
+    },
+    {
+        title: 'Bus Jam Game Hyper-Casual',
+        url: 'https://github.com/WhoIsOnatBudak/Rollic-Case',
+        icons: ['csharp'],
     }
 
 ];
